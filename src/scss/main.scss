@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/** Подключение миксинов */
+@import 'config/functions';
+@import 'config/mixins';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+* Общие параметры, шаблоны(заготовки) и вспомогательные классы
+*/
+@import 'config/base';
+
+/**
+* Подключение стилей отдельных блоков и секций
+*/
+@import 'components/header';
+@import 'components/footer';
+@import 'components/slider';
+@import 'components/advantages';

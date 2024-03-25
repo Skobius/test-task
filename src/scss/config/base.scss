@@ -1,0 +1,70 @@
+/** Базовые анимации: */
+@import 'keyframes';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+
+	/** Поменять на clip - если используется в проекте position: sticky */
+	overflow: hidden;
+}
+
+.container {
+	padding: 0 18px;
+	max-width: 1308px;
+	margin: auto;
+}
+
+.button {
+	background: none;
+	padding: 14px 22px;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	
+	&--black {
+		border: 2px solid #262626;
+		color: #262626;
+		transition: .4s;
+		
+		img {
+			transition: .4s;
+		}
+		
+		&:hover {
+			border: 2px solid #fff;
+			color: #fff;
+			background: #262626;
+				
+			img {
+				filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(347deg) brightness(104%) contrast(101%);
+			}
+		}
+	}
+	
+	&--white {
+		border: 2px solid #fff;
+		color: #fff;
+		
+		&:hover {
+			border: 2px solid #fff;
+			color: #262626;
+			background: #fff;
+				
+			img {
+				filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(347deg) brightness(104%) contrast(101%);
+			}
+		}
+	}
+}
+
+body{
+	font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+	color: #262626;
+}
+
+h1{
+   font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
